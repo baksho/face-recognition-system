@@ -73,17 +73,3 @@ data/raw/att_faces/
 The default reproduction uses `s1`–`s10`, ten images per subject.
 
 Then run the database-building scripts from MATLAB. The exact commands and parameters are documented in `docs/reproduction.md`.
-
-## Why this is not a line-by-line copy
-
-The report's source code contains assumptions that are natural for a 2014 student project, including hard-coded Windows path conventions, sequential image naming and older MATLAB image-processing APIs.
-
-The code in this folder keeps the algorithm and interaction model but removes accidental fragility where doing so does not change the method.
-
-The goal is therefore **faithful reproduction of the project**, not preservation of every historical coding mistake.
-
-## Historical auxiliary module
-
-The report also contains `FaceD.m` and `fcnBPDFHE.m`, which implement an image-processing experiment involving fuzzy histogram enhancement, skin-colour segmentation, binary processing, connected components and cropping.
-
-These files remain separate from the core Eigenface recognizer because they represent an auxiliary image-processing experiment rather than the main recognition algorithm.
