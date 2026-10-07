@@ -37,7 +37,7 @@ The Python implementation is explicitly a reproduction and modernization. It is 
 
 ## Historical context
 
-The original report is dated **10 March 2014**. At that point, PCA/Eigenfaces were an established and highly teachable classical approach to face recognition. The project focused on understanding the mathematics and implementing the complete pipeline in MATLAB rather than using a pretrained deep neural network.
+The original report was submitted in March, 2014. At that point, PCA/Eigenfaces were an established and highly teachable classical approach to face recognition. The project focused on understanding the mathematics and implementing the complete pipeline in MATLAB rather than using a pretrained deep neural network.
 
 The report describes a training set of 100 images covering ten people, with variation in expressions, illumination, rotation and scale. The implementation normalized input images to 250×250 grayscale images before extracting PCA features.
 
@@ -49,7 +49,7 @@ Today, this approach is deliberately simple compared with modern face-recognitio
 
 ## Dataset used for reproduction
 
-The report describes the original training set but does not contain the original 100 image files. To make the project reproducible, this repository uses a **public pre-2014 face dataset** as a documented substitute: the **AT&T Database of Faces, formerly the ORL Database of Faces**.
+To make the project reproducible, this repository uses a **public pre-2014 face dataset** as a documented substitute: the **AT&T Database of Faces, formerly the ORL Database of Faces**.
 
 The dataset was collected between April 1992 and April 1994. It contains 40 subjects with ten images per subject, with variations in lighting, facial expression and facial details such as glasses. Images are grayscale PGM files of 92×112 pixels.
 
