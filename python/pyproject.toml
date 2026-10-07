@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "face-recognition-eigenfaces-python"
+version = "1.0.0"
+description = "Modern Python reproduction and extension of a 2014 MATLAB PCA/Eigenface face-recognition project."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Suvinava Basak"}]
+dependencies = ["numpy>=1.26", "pandas>=2.2", "Pillow>=10.0", "scikit-learn>=1.5", "joblib>=1.4"]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.38", "plotly>=5.24"]
+webcam = ["opencv-python>=4.10"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+all = ["streamlit>=1.38", "plotly>=5.24", "opencv-python>=4.10", "pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+eigenface = "eigenface.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Dataset images are not redistributed
+/data/raw/att_faces/
+/data/metadata/dataset.csv
+
+# Generated models / databases
+/python/models/
+/python/.streamlit/
+*.joblib
+*.mat
+*.sqlite3

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the original 2014 project and this software reproduction."
+title: "Face Recognition System: 2014 MATLAB Project and 2026 Python Reproduction"
+type: software
+authors:
+  - family-names: Basak
+    given-names: Suvinava
+    affiliation: "Jalpaiguri Government Engineering College / TU Braunschweig"
+version: 1.0.0
+date-released: 2026-10-07
+license: MIT
+repository-code: "https://github.com/YOUR_USERNAME/face-recognition-system"
+abstract: >-
+  Archival and modernized reproduction of a 2014 B.Tech PCA/Eigenface
+  face-recognition project originally implemented in MATLAB, with a separate
+  modern Python implementation that preserves the classical algorithm while
+  improving reproducibility, evaluation, persistence and user experience.
